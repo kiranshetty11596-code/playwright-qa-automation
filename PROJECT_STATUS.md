@@ -3,8 +3,9 @@
 ## Current Status
 
 Day: 2
-Step: 15
+Step: 30
 Overall Progress: In Progress
+
 
 
 ## Completed
@@ -25,7 +26,7 @@ Overall Progress: In Progress
 
 ## Current Step
 
-Day 2 — Step 15
+Day 2 — Step 30
 
 Status:
 IN PROGRESS
@@ -74,9 +75,42 @@ None currently recorded.
 
 ## Next Step
 
-Day 2 — Step 16
+Day 2 — Step 31
 
 ## Resume Instruction
 
 Continue from:
-Day 2 — Step 16
+Day 2 — Step 30
+
+
+## Target Application
+
+Application:
+Automation in Testing — Restful Booker Platform
+
+Primary Base URL:
+https://automationintesting.online
+
+Decision:
+SELECT
+
+Architecture:
+One application / one primary environment with UI and API capabilities.
+
+Verified Capabilities:
+- UI available ✅
+- REST API available ✅
+- Authentication available ✅
+- Booking CRUD operations available ✅
+- Room API available ✅
+- UI/API relationship verified ✅
+- API health endpoint verified ✅
+
+Important Environment Limitation:
+The deployed environment resets its seeded data approximately every 10 minutes.
+
+Automation Strategy Implication:
+Test data must be isolated and controlled. API-based setup and cleanup will be preferred where appropriate rather than relying on persistent shared state.
+
+Architectural Note:
+The platform exposes multiple service/API paths, but they belong to the same Restful Booker application and deployed environment. No unrelated external application or mock API will be introduced.
