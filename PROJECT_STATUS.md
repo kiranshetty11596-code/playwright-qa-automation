@@ -1,116 +1,87 @@
-# Playwright QA Automation Project
+Playwright QA Automation Project
+Current Status
+Day: 2 Step: 6 Overall Progress: 27%
 
-## Current Status
+Completed
+Day 1
+Step 1 — Environment Assessment ✅
+Step 2 — GitHub Repository ✅
+Step 3 — Target Application Verification ✅
+Step 4 — Project Scope ✅
+Day 2
+Step 1 — JavaScript/npm Foundation ✅
+Step 2 — Playwright Test Installation/Verification ✅
+Step 3 — Playwright Browsers ✅
+Step 4 — Initial Playwright Configuration ✅
+Step 5 — Basic Playwright Test ✅
+Current Step
+Day 2 — Step 6 Status: DEFERRED
 
-Day: 2
-Step: 30
-Overall Progress: In Progress
+Files Created/Modified
+tests/smoke.spec.js
+PROJECT_SCOPE.md
+PROJECT_STATUS.md
+playwright.config.js — reviewed, no changes required
+Commands Completed
+node --version
+npm --version
+npm pkg get name
+npm pkg get scripts
+npm list @playwright/test
+npx playwright install --dry-run
+npx playwright install --list
+npx playwright test
+Verified Results
+Node.js: v24.21.0 ✅
+npm: 11.19.0 ✅
+Playwright Test: 1.63.0 ✅
+Chromium: Installed ✅
+Firefox: Installed ✅
+WebKit: Installed ✅
+Basic Playwright test: Passed ✅
+Technical Concepts Learned
+Node.js/npm project foundation
+Playwright Test installation
+Playwright browser management
+Playwright configuration
+baseURL
+Browser projects
+Retries and workers
+Trace configuration
+Screenshot/video configuration
+Basic Playwright assertions
+Debugging assertion failures
+npm scripts vs direct Playwright CLI execution
+Interview Questions Covered
+How do you verify a Playwright environment?
+What is the difference between Playwright Test and browser binaries?
+How do you configure Playwright?
+What is baseURL?
+How do retries and workers work?
+How do you debug a failed Playwright assertion?
+Why should unnecessary framework complexity be avoided?
+Problems Encountered
+Initial page-title assertion did not match the actual application title.
+Solutions
+Inspected the Playwright failure output.
+Identified the actual application title:
+Restful-booker-platform demo
 
-
-
-## Completed
-
-### Day 1
-- Step 1 — Environment Assessment ✅
-- Step 2 — GitHub Repository Setup ✅
-- Step 3 — Target Application Verification ✅
-- Step 4 — Project Scope Definition ✅
-- Steps 5–10 — Completed and verified ✅
-
-### Day 2
-- Step 11 — Created PROJECT_STATUS.md ✅
-- Step 12 — Committed project status baseline ✅
-- Step 13 — Pushed commit to GitHub ✅
-- Step 14 — Verified GitHub repository state ✅
-
-
-## Current Step
-
-Day 2 — Step 30
-
-Status:
-IN PROGRESS
-
-## Files Created/Modified
-
-- PROJECT_STATUS.md
-
-## Commands Completed
-
-- Environment verification
-- Git repository setup
-- Repository configuration
-
-## Technical Concepts Learned
-
-- Project environment validation
-- Git repository management
-- Target application assessment
-- Project scope definition
-
-## Interview Questions Covered
-
-- Why use Playwright for UI automation?
-- Why combine UI and API automation?
-- How should an automation framework be designed around the target application's capabilities?
-
-## Problems Encountered
-
-None currently recorded.
-
-## Solutions
-
-None currently recorded.
-
-## Pending
-
-- Verify PROJECT_STATUS.md
-- Continue framework implementation
-- Build UI automation layer
-- Build API automation layer
-- Build UI/API integration layer
-- Configure CI/CD
-- Configure reporting
-- Build interview examples
-
-## Next Step
-
-Day 2 — Step 31
-
-## Resume Instruction
-
-Continue from:
-Day 2 — Step 30
-
-
-## Target Application
-
-Application:
-Automation in Testing — Restful Booker Platform
-
-Primary Base URL:
-https://automationintesting.online
-
-Decision:
-SELECT
-
-Architecture:
-One application / one primary environment with UI and API capabilities.
-
-Verified Capabilities:
-- UI available ✅
-- REST API available ✅
-- Authentication available ✅
-- Booking CRUD operations available ✅
-- Room API available ✅
-- UI/API relationship verified ✅
-- API health endpoint verified ✅
-
-Important Environment Limitation:
-The deployed environment resets its seeded data approximately every 10 minutes.
-
-Automation Strategy Implication:
-Test data must be isolated and controlled. API-based setup and cleanup will be preferred where appropriate rather than relying on persistent shared state.
-
-Architectural Note:
-The platform exposes multiple service/API paths, but they belong to the same Restful Booker application and deployed environment. No unrelated external application or mock API will be introduced.
+Corrected the assertion.
+Reran the test successfully.
+Pending
+npm scripts — deferred until they provide meaningful value
+Day 3 — Project Structure + Configuration Review
+Page Object Model
+UI business flows
+API automation
+UI/API integration
+Fixtures
+Test-data strategy
+Authentication
+CI/CD
+Reporting
+Release-quality strategy
+Interview preparation
+Next Step
+Day 3 — Step 1: Project Structure + Configuration Review
